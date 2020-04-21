@@ -1,0 +1,1038 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.ir-position {
+  position: relative;
+  z-index: -1;
+}
+
+.ir-indent {
+  overflow: hidden;
+  text-indent: -99999px;
+  line-height: 0;
+  font-size: 0;
+}
+
+#skip > a {
+  position: absolute;
+  left: 0;
+  top: -9999px;
+  color: #fff;
+  background-color: #333;
+}
+
+#skip > a:active, #skip > a:focus {
+  top: 0;
+}
+
+html {
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.inner {
+  width: 990px;
+  height: inherit;
+  margin: 0 auto;
+}
+
+#wrap > header {
+  height: 325px;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS8TKk3HwixJ7WbCgmyIwv0oP2godY-HaZjxThJhJPmsVCPY0Xb&usqp=CAU");
+  background-repeat: repeat;
+  background-position: center;
+}
+
+#wrap > header > div > header > .header-menu {
+  text-align: right;
+}
+
+#wrap > header > div > header > .header-menu > a {
+  display: inline-block;
+  padding: 10px 0 10px 13px;
+  color: #fff;
+  text-shadow: 5px 5px 4px #000;
+}
+
+#wrap > header > div > header > .header-menu > a:hover {
+  color: #666;
+}
+
+#wrap > header > div > header > .header-tit {
+  text-align: center;
+  color: red;
+}
+
+#wrap > header > div > header > .header-tit h1 {
+  width: 50%;
+  margin: 0 auto;
+  background-color: #4aa8d4;
+  font-size: 28px;
+  padding: 10px;
+  color: #fff;
+  margin-top: 40px;
+  text-transform: uppercase;
+}
+
+#wrap > header > div > header > .header-tit a {
+  color: #fff;
+  font-size: 18px;
+  background-color: #2698cd;
+  padding: 5px 20px 6px 20px;
+}
+
+#wrap > header > div > header > .header-icon {
+  color: red;
+  margin-top: 30px;
+  text-align: center;
+}
+
+#wrap > header > div > header > .header-icon > a {
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  background-image: url("https://github.com/webstoryboy/webstandard2019/blob/master/img/icon.png?raw=true");
+  margin: 0 3px;
+}
+
+#wrap > header > div > header > .header-icon > a:nth-child(1) {
+  background-position: 0 0;
+}
+
+#wrap > header > div > header > .header-icon > a:nth-child(2) {
+  background-position: 0 -60px;
+}
+
+#wrap > header > div > header > .header-icon > a:nth-child(3) {
+  background-position: 0 -120px;
+}
+
+#wrap > header > div > header > .header-icon > a:nth-child(4) {
+  background-position: 0 -180px;
+}
+
+#wrap > header > div > header > .header-icon > a:nth-child(1):hover {
+  background-position: -60px 0;
+}
+
+#wrap > header > div > header > .header-icon > a:nth-child(2):hover {
+  background-position: -60px -60px;
+}
+
+#wrap > header > div > header > .header-icon > a:nth-child(3):hover {
+  background-position: -60px -120px;
+}
+
+#wrap > header > div > header > .header-icon > a:nth-child(4):hover {
+  background-position: -60px -180px;
+}
+
+#wrap > main #cont-nav {
+  background-color: #f6fdff;
+}
+
+#wrap > main #cont-nav .nav {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#wrap > main #cont-nav .nav:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+#wrap > main #cont-nav .nav > div {
+  width: 40%;
+  float: left;
+}
+
+#wrap > main #cont-nav .nav > div > h3 {
+  font-size: 18px;
+  color: #25a2d0;
+  margin-bottom: 4px;
+}
+
+#wrap > main #cont-nav .nav > div ul:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+#wrap > main #cont-nav .nav > div li {
+  float: left;
+  width: 50%;
+}
+
+#wrap > main #cont-nav .nav > div li > a:hover {
+  text-decoration: underline;
+}
+
+#wrap > main #cont-nav .nav > div:last-child {
+  width: 20%;
+}
+
+#wrap > main #cont-nav .nav > div:last-child li {
+  width: 100%;
+}
+
+#wrap > main #cont-tit {
+  background-color: #eaf7fd;
+}
+
+#wrap > main #cont-tit .tit {
+  padding: 5px 0;
+  position: relative;
+}
+
+#wrap > main #cont-tit .tit > h2 {
+  font-size: 40px;
+  letter-spacing: 2px;
+  color: #2c94c4;
+  text-align: center;
+}
+
+#wrap > main #cont-tit .tit > h2:before {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  left: 0;
+  content: '"';
+  display: inline-block;
+  font-size: 50px;
+  color: #888;
+}
+
+#wrap > main #cont-tit .tit > h2:after {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  right: 0;
+  content: '"';
+  font-size: 50px;
+  color: #888;
+  display: inline-block;
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+}
+
+#wrap > main #cont-tit .tit > .btn {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 60px;
+  height: 60px;
+  background-image: url("https://github.com/webstoryboy/webstandard2019/blob/master/img/icon.png?raw=true");
+  background-position: 0 -600px;
+}
+
+#wrap > main #cont-banner {
+  background-color: #aaddf1;
+}
+
+#wrap > main #cont-banner .ban {
+  position: relative;
+  padding: 24px 0 20px;
+}
+
+#wrap > main #cont-banner .ban > a.prev {
+  width: 43px;
+  height: 43px;
+  position: absolute;
+  top: 60px;
+  left: -60px;
+  background-image: url("https://github.com/webstoryboy/webstandard2019/blob/master/img/icon.png?raw=true");
+  background-position: -150px 0;
+}
+
+#wrap > main #cont-banner .ban > a.prev:hover {
+  background-position: -193px 0;
+}
+
+#wrap > main #cont-banner .ban > a.next {
+  width: 43px;
+  height: 43px;
+  position: absolute;
+  top: 60px;
+  right: -60px;
+  background-image: url("https://github.com/webstoryboy/webstandard2019/blob/master/img/icon.png?raw=true");
+  background-position: -150px -43px;
+}
+
+#wrap > main #cont-banner .ban > a.next:hover {
+  background-position: -193px -43px;
+}
+
+#wrap > main #cont-banner .ban > ul:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#wrap > main #cont-banner .ban > ul > li {
+  float: left;
+  width: 330px;
+}
+
+#wrap > main #cont-banner .ban > ul > li:nth-child(2) {
+  text-align: center;
+}
+
+#wrap > main #cont-banner .ban > ul > li:last-child {
+  text-align: right;
+}
+
+#wrap > main #cont-banner .ban > ul > li img {
+  display: inline-block;
+  border: 5px solid #999;
+}
+
+#wrap > main #cont-banner .ban > ul > li img:hover {
+  border: 5px solid red;
+}
+
+#wrap > main #cont-cont {
+  background-color: #f6fdff;
+}
+
+#wrap > main #cont-cont .cont {
+  padding-top: 30px;
+}
+
+#wrap > main #cont-cont .cont:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#wrap > main #cont-cont .cont > .column {
+  width: 289px;
+  height: 363px;
+  float: left;
+  margin: 0 30px 30px 0;
+  padding-right: 30px;
+}
+
+#wrap > main #cont-cont .cont > .column > h3 {
+  position: relative;
+  padding: 5px 0;
+}
+
+#wrap > main #cont-cont .cont > .column > h3 > .ico_img {
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-image: url("https://github.com/webstoryboy/webstandard2019/blob/master/img/icon.png?raw=true");
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#wrap > main #cont-cont .cont > .column > h3 > .ico_tit {
+  padding-left: 70px;
+  color: #4aa8d4;
+}
+
+#wrap > main #cont-cont .cont > .column > .ico_desc {
+  padding-left: 70px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #d0d0d0;
+}
+
+#wrap > main #cont-cont .cont > .col1 {
+  border-right: 1px solid #c8c8c8;
+}
+
+#wrap > main #cont-cont .cont > .col1 .notice {
+  position: relative;
+}
+
+#wrap > main #cont-cont .cont > .col1 .notice .more {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-image: url("https://github.com/webstoryboy/webstandard2019/blob/master/img/icon.png?raw=true");
+  background-position: -150px -90px;
+  width: 17px;
+  height: 17px;
+}
+
+#wrap > main #cont-cont .cont > .col1 .notice > h4 {
+  font-size: 14px;
+  color: #0093bd;
+  padding-bottom: 3px;
+  font-weight: 700;
+}
+
+#wrap > main #cont-cont .cont > .col1 .notice > ul > li {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background-image: url("https://raw.githubusercontent.com/webstoryboy/webstandard2019/master/img/dot.gif");
+  background-repeat: no-repeat;
+  background-position: 0 10px;
+  padding-left: 10px;
+}
+
+#wrap > main #cont-cont .cont > .col1 .notice > ul > li > a {
+  font-size: 12px;
+}
+
+#wrap > main #cont-cont .cont > .col1 .notice2 {
+  position: relative;
+  margin-top: 15px;
+}
+
+#wrap > main #cont-cont .cont > .col1 .notice2 > ul > li {
+  background-image: url("https://raw.githubusercontent.com/webstoryboy/webstandard2019/master/img/dot.gif");
+  background-repeat: no-repeat;
+  background-position: 0 10px;
+}
+
+#wrap > main #cont-cont .cont > .col1 .notice2 > ul > li:after {
+  overflow: hidden;
+  clear: both;
+  content: "";
+  display: table;
+}
+
+#wrap > main #cont-cont .cont > .col1 .notice2 > ul > li > a {
+  padding-left: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  float: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 65%;
+  text-align-last: left;
+}
+
+#wrap > main #cont-cont .cont > .col1 .notice2 > ul > li > span {
+  float: right;
+  text-align: right;
+  width: 35%;
+}
+
+#wrap > main #cont-cont .cont > .col1 .notice2 > h4 {
+  font-size: 14px;
+  color: #0093bd;
+  padding-bottom: 3px;
+  font-weight: 700;
+}
+
+#wrap > main #cont-cont .cont > .col1 .notice2 .more {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-image: url("https://github.com/webstoryboy/webstandard2019/blob/master/img/icon.png?raw=true");
+  background-position: -150px -90px;
+  width: 17px;
+  height: 17px;
+}
+
+#wrap > main #cont-cont .cont > .col1 .ico_img > ul > li > a {
+  background-position: 0 -240px;
+}
+
+#wrap > main #cont-cont .cont > .col1 .ico_img:hover {
+  background-position: -60px -240px;
+}
+
+#wrap > main #cont-cont .cont > .col2 {
+  border-right: 1px solid #c8c8c8;
+}
+
+#wrap > main #cont-cont .cont > .col2 .notice3 {
+  position: relative;
+}
+
+#wrap > main #cont-cont .cont > .col2 .notice3 .more {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-image: url("https://github.com/webstoryboy/webstandard2019/blob/master/img/icon.png?raw=true");
+  background-position: -150px -90px;
+  width: 17px;
+  height: 17px;
+}
+
+#wrap > main #cont-cont .cont > .col2 .notice3 > h4 {
+  font-size: 14px;
+  color: #0093bd;
+  padding-bottom: 3px;
+  font-weight: 700;
+}
+
+#wrap > main #cont-cont .cont > .col2 .notice3 > ul > li {
+  position: relative;
+  padding: 8px 0 14px 60px;
+}
+
+#wrap > main #cont-cont .cont > .col2 .notice3 > ul > li:after {
+  display: table;
+  content: "";
+  clear: both;
+  overflow: hidden;
+}
+
+#wrap > main #cont-cont .cont > .col2 .notice3 > ul > li > a > img {
+  display: block;
+  width: 50px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 1.5px solid #0093bd;
+}
+
+#wrap > main #cont-cont .cont > .col2 .notice3 > ul > li > a > strong {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#wrap > main #cont-cont .cont > .col2 .notice3 > ul > li > a > span {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 12px;
+}
+
+#wrap > main #cont-cont .cont > .col2 .ico_img {
+  background-position: 0 -300px;
+}
+
+#wrap > main #cont-cont .cont > .col2 .ico_img:hover {
+  background-position: -60px -300px;
+}
+
+#wrap > main #cont-cont .cont > .col3 {
+  border-right: 1px solid #c8c8c8;
+  margin-right: 0;
+  padding-right: 0;
+}
+
+#wrap > main #cont-cont .cont > .col3 .ico_img {
+  background-position: 0 -360px;
+}
+
+#wrap > main #cont-cont .cont > .col3 .ico_img:hover {
+  background-position: -60px -360px;
+}
+
+#wrap > main #cont-cont .cont > .col3 .login-wrap > #login_form {
+  background-color: #f2f4f5;
+  padding: 15px;
+}
+
+#wrap > main #cont-cont .cont > .col3 .login-wrap #login_form > fieldset {
+  border: none;
+}
+
+#wrap > main #cont-cont .cont > .col3 .login-wrap #login_form > fieldset > .login_header {
+  font-size: 12p;
+  height: 30px;
+}
+
+#wrap > main #cont-cont .cont > .col3 .login-wrap #login_form > fieldset > .login_header:after {
+  overflow: hidden;
+  clear: both;
+  display: table;
+  content: "";
+}
+
+#wrap > main #cont-cont .cont > .col3 .login-wrap #login_form > fieldset > .login_header > .ih_check {
+  float: left;
+  padding-right: 15px;
+  font-size: 15px;
+}
+
+#wrap > main #cont-cont .cont > .col3 .login-wrap #login_form > fieldset > .login_header > .ih_ip {
+  font-size: 15px;
+  float: left;
+}
+
+#wrap > main #cont-cont .cont > .col3 .login-wrap #login_form > fieldset > .login_header > .ih_ip > em {
+  text-decoration: underline;
+  color: #0093bd;
+}
+
+#wrap > main #cont-cont .cont > .col3 .login-wrap #login_form > fieldset > .login_center {
+  position: relative;
+}
+
+#wrap > main #cont-cont .cont > .col3 .login-wrap #login_form > fieldset > .login_center > .ic_btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 62px;
+  background-color: #fff;
+  border: none;
+}
+
+#wrap > main #cont-cont .cont > .col3 .login-wrap #login_form > fieldset > .login_center > label > input {
+  width: 182px;
+  height: 16px;
+  padding: 2px 5px;
+  border: 1px solid #bebebe;
+  margin-bottom: 3px;
+  background-color: #fff;
+}
+
+#wrap > main #cont-cont .cont > .col3 .login-wrap #login_form > fieldset > .login_footer {
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+#wrap > main #cont-cont .cont > .col3 .login-wrap #login_form > fieldset > .login_footer > ul > li {
+  display: inline;
+}
+
+#wrap > main #cont-cont .cont > .col3 .login-wrap #login_form > fieldset > .login_footer > ul > li > a {
+  font-size: 12px;
+}
+
+#wrap > main #cont-cont .cont > .col3 .popup {
+  margin-top: 15px;
+}
+
+#wrap > main #cont-cont .cont > .col3 .popup > h4 {
+  font-size: 14px;
+  color: #0093bd;
+  padding-bottom: 4px;
+  font-weight: 700;
+}
+
+#wrap > main #cont-cont .cont > .col3 .popup > ul:after {
+  overflow: hidden;
+  clear: both;
+  content: "";
+  display: table;
+}
+
+#wrap > main #cont-cont .cont > .col3 .popup > ul > li {
+  float: left;
+  width: 91px;
+  margin-right: 5px;
+}
+
+#wrap > main #cont-cont .cont > .col3 .popup > ul > li > a > img {
+  width: 100%;
+  display: block;
+}
+
+#wrap > main #cont-cont .cont > .col4 {
+  border-right: 1px solid #c8c8c8;
+}
+
+#wrap > main #cont-cont .cont > .col4 .ico_img {
+  background-position: 0 -420px;
+}
+
+#wrap > main #cont-cont .cont > .col4 .ico_img:hover {
+  background-position: -60px -420px;
+}
+
+#wrap > main #cont-cont .cont > .col4 .notice_hover > h4 {
+  font-size: 14px;
+  color: #0093bd;
+  padding-bottom: 3px;
+  font-weight: 700;
+}
+
+#wrap > main #cont-cont .cont > .col4 .notice_hover > ul:after {
+  overflow: hidden;
+  display: table;
+  clear: both;
+  content: "";
+}
+
+#wrap > main #cont-cont .cont > .col4 .notice_hover > ul > li {
+  float: left;
+  width: 93px;
+  margin-right: 5px;
+  text-align: center;
+}
+
+#wrap > main #cont-cont .cont > .col4 .notice_hover > ul > li:last-child {
+  margin-right: unset;
+}
+
+#wrap > main #cont-cont .cont > .col4 .notice_hover > ul > li > a > div {
+  line-height: 93px;
+  height: 93px;
+  position: relative;
+}
+
+#wrap > main #cont-cont .cont > .col4 .notice_hover > ul > li > a > div:after {
+  overflow: hidden;
+  display: table;
+  clear: both;
+  content: "";
+}
+
+#wrap > main #cont-cont .cont > .col4 .notice_hover > ul > li > a > div:hover > em {
+  visibility: visible;
+}
+
+#wrap > main #cont-cont .cont > .col4 .notice_hover > ul > li > a > div > em {
+  position: absolute;
+  left: 0;
+  top: 0;
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  width: 100%;
+  height: 100%;
+}
+
+#wrap > main #cont-cont .cont > .col4 .notice_hover > ul > li > a > div > img {
+  width: 100%;
+  height: 93px;
+}
+
+#wrap > main #cont-cont .cont > .col4 .notice_hover > ul > li > a > strong {
+  text-align: center;
+  padding-top: 3px;
+  font-size: 12px;
+}
+
+#wrap > main #cont-cont .cont > .col4 .notice_hover2 > h4 {
+  font-size: 14px;
+  color: #0093bd;
+  padding-bottom: 3px;
+  font-weight: 700;
+}
+
+#wrap > main #cont-cont .cont > .col4 .notice_hover2 > ul:after {
+  overflow: hidden;
+  display: table;
+  clear: both;
+  content: "";
+}
+
+#wrap > main #cont-cont .cont > .col4 .notice_hover2 > ul > li {
+  float: left;
+  width: 93px;
+  margin-right: 5px;
+  text-align: center;
+}
+
+#wrap > main #cont-cont .cont > .col4 .notice_hover2 > ul > li:last-child {
+  margin-right: unset;
+}
+
+#wrap > main #cont-cont .cont > .col4 .notice_hover2 > ul > li > a > div {
+  height: 93px;
+  position: relative;
+}
+
+#wrap > main #cont-cont .cont > .col4 .notice_hover2 > ul > li > a > div:after {
+  overflow: hidden;
+  display: table;
+  clear: both;
+  content: "";
+}
+
+#wrap > main #cont-cont .cont > .col4 .notice_hover2 > ul > li > a > div:hover > em {
+  visibility: visible;
+  opacity: 1;
+}
+
+#wrap > main #cont-cont .cont > .col4 .notice_hover2 > ul > li > a > div > em {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  visibility: none;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  width: 100%;
+  height: 25px;
+  line-height: 25px;
+}
+
+#wrap > main #cont-cont .cont > .col4 .notice_hover2 > ul > li > a > div > img {
+  width: 100%;
+  height: 93px;
+}
+
+#wrap > main #cont-cont .cont > .col4 .notice_hover2 > ul > li > a > strong {
+  text-align: center;
+  padding-top: 3px;
+  font-size: 12px;
+}
+
+#wrap > main #cont-cont .cont > .col5 {
+  border-right: 1px solid #c8c8c8;
+}
+
+#wrap > main #cont-cont .cont > .col5 .ico_img {
+  background-position: 0 -480px;
+}
+
+#wrap > main #cont-cont .cont > .col5 .ico_img:hover {
+  background-position: -60px -480px;
+}
+
+#wrap > main #cont-cont .cont > .col5 .tab-menu {
+  position: relative;
+  padding: 8px;
+  height: 105px;
+}
+
+#wrap > main #cont-cont .cont > .col5 .tab-menu > ul {
+  border-bottom: 1px solid #ccc;
+}
+
+#wrap > main #cont-cont .cont > .col5 .tab-menu > ul:after {
+  content: "";
+  display: table;
+  clear: both;
+  overflow: hidden;
+}
+
+#wrap > main #cont-cont .cont > .col5 .tab-menu > ul > li > a {
+  padding: 5px 10px;
+  display: block;
+  font-size: 15px;
+}
+
+#wrap > main #cont-cont .cont > .col5 .tab-menu > ul > li.active {
+  background-color: #2c94c4;
+}
+
+#wrap > main #cont-cont .cont > .col5 .tab-menu > ul > li.active > a {
+  color: #fff;
+}
+
+#wrap > main #cont-cont .cont > .col5 .tab-menu > ul > li {
+  float: left;
+  border: 1px solid #000;
+}
+
+#wrap > main #cont-cont .cont > .col5 .tab-menu > ul > li > ul.active {
+  display: block;
+}
+
+#wrap > main #cont-cont .cont > .col5 .tab-menu > ul > li > ul {
+  width: 270px;
+  position: absolute;
+  left: 0;
+  top: 48px;
+  display: none;
+}
+
+#wrap > main #cont-cont .cont > .col5 .tab-menu > ul > li > ul > li {
+  background-image: url("https://raw.githubusercontent.com/webstoryboy/webstandard2019/master/img/dot.gif");
+  background-repeat: no-repeat;
+  padding-left: 25px;
+  background-position: 19px 9px;
+}
+
+#wrap > main #cont-cont .cont > .col5 .tab-menu > ul > li > ul > li > a {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 0 0 3px 0;
+  font-size: 17px;
+}
+
+#wrap > main #cont-cont .cont > .col5 .latest-notice {
+  position: relative;
+}
+
+#wrap > main #cont-cont .cont > .col5 .latest-notice > h4 {
+  padding: 8px 10px;
+  border-bottom: 1px solid #ccc;
+  font-size: 14px;
+  color: #0093bd;
+}
+
+#wrap > main #cont-cont .cont > .col5 .latest-notice > h4 > em {
+  color: #cf3292;
+  font-weight: 700;
+}
+
+#wrap > main #cont-cont .cont > .col5 .latest-notice > .more {
+  position: absolute;
+  top: 9px;
+  right: 9px;
+  font-size: 13px;
+}
+
+#wrap > main #cont-cont .cont > .col5 .latest-notice > ul {
+  padding: 10px 0;
+}
+
+#wrap > main #cont-cont .cont > .col5 .latest-notice > ul > li {
+  background-image: url("https://raw.githubusercontent.com/webstoryboy/webstandard2019/master/img/dot.gif");
+  background-repeat: no-repeat;
+  padding-left: 25px;
+  background-position: 19px 9px;
+  padding-bottom: 2px;
+}
+
+#wrap > main #cont-cont .cont > .col5 .latest-notice > ul > li:after {
+  display: table;
+  content: "";
+  clear: both;
+  overflow: hidden;
+}
+
+#wrap > main #cont-cont .cont > .col5 .latest-notice > ul > li > a {
+  float: left;
+  width: 60%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 16px;
+}
+
+#wrap > main #cont-cont .cont > .col5 .latest-notice > ul > li > span {
+  float: right;
+  font-size: 16px;
+  text-align: right;
+}
+
+#wrap > main #cont-cont .cont > .col6 {
+  border-right: 1px solid #c8c8c8;
+  margin-right: 0;
+  padding-right: 0;
+}
+
+#wrap > main #cont-cont .cont > .col6 .ico_img {
+  background-position: 0 -540px;
+}
+
+#wrap > main #cont-cont .cont > .col6 .ico_img:hover {
+  background-position: -60px -540px;
+}
+
+#wrap > main #cont-cont .cont > .col6 .gallery {
+  position: relative;
+  border: 1px solid #ccc;
+  height: 254px;
+  overflow: hidden;
+}
+
+#wrap > main #cont-cont .cont > .col6 .gallery > h4 {
+  font-size: 14px;
+  color: #0093bd;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0 8px 11px;
+  font-weight: 700;
+}
+
+#wrap > main #cont-cont .cont > .col6 .gallery > .gallery_btn {
+  position: absolute;
+  right: 5px;
+  top: 7px;
+}
+
+#wrap > main #cont-cont .cont > .col6 .gallery > .gallery_btn > ul:after {
+  overflow: hidden;
+  clear: both;
+  display: table;
+  content: "";
+}
+
+#wrap > main #cont-cont .cont > .col6 .gallery > .gallery_btn > ul > li {
+  float: left;
+  margin: 1px 2px;
+}
+
+#wrap > main #cont-cont .cont > .col6 .gallery > .gallery_btn > ul > li > a {
+  display: block;
+  width: 23px;
+  height: 23px;
+  background-image: url("https://github.com/webstoryboy/webstandard2019/blob/master/img/icon.png?raw=true");
+  background-repeat: no-repeat;
+}
+
+#wrap > main #cont-cont .cont > .col6 .gallery > .gallery_btn > ul > li > a.gb-icon1 {
+  background-position: -150px -120px;
+}
+
+#wrap > main #cont-cont .cont > .col6 .gallery > .gallery_btn > ul > li > a.gb-icon2 {
+  background-position: -150px -143px;
+}
+
+#wrap > main #cont-cont .cont > .col6 .gallery > .gallery_btn > ul > li > a.gb-icon3 {
+  background-position: -150px -166px;
+}
+
+#wrap > main #cont-cont .cont > .col6 .gallery > .gallery_btn > ul > li > a.gb-icon4 {
+  background-position: -150px -189px;
+}
+
+#wrap > main #cont-cont .cont > .col6 .gallery > .gallery_btn > ul > li > a.gb-icon1:hover {
+  background-position: -173px -120px;
+}
+
+#wrap > main #cont-cont .cont > .col6 .gallery > .gallery_btn > ul > li > a.gb-:hover {
+  background-position: -173px -143px;
+}
+
+#wrap > main #cont-cont .cont > .col6 .gallery > .gallery_btn > ul > li > a.gb-icon3:hover {
+  background-position: -173px -166px;
+}
+
+#wrap > main #cont-cont .cont > .col6 .gallery > .gallery_btn > ul > li > a.gb-icon4:hover {
+  background-position: -173px -189px;
+}
+
+#wrap > main #cont-cont .cont > .col6 .gallery > .gallery_imgul > li > a > img {
+  width: 100%;
+}
+
+#wrap > footer {
+  border-top: 1px solid #eee;
+  font-size: 15px;
+}
+
+#wrap > footer .footer {
+  text-align: center;
+  padding: 25px 0;
+}
+
+#wrap > footer .footer > ul {
+  margin-bottom: 20px;
+}
+
+#wrap > footer .footer > ul > li {
+  display: inline;
+  padding: 0 7px 0 10px;
+  position: relative;
+}
+
+#wrap > footer .footer > ul > li:after {
+  content: " ";
+  width: 1px;
+  height: 12px;
+  background-color: #ccc;
+  position: absolute;
+  top: 2px;
+  right: 0;
+}
+
+#wrap > footer .footer > ul > li:last-child:after {
+  content: "";
+  width: 0;
+  height: 0;
+}
+/*# sourceMappingURL=index.css.map */
