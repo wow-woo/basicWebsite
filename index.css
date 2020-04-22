@@ -138,6 +138,7 @@ a {
 
 #wrap > main #cont-nav {
   background-color: #f6fdff;
+  display: none;
 }
 
 #wrap > main #cont-nav .nav {
