@@ -134,7 +134,9 @@ a {
   & > main {
     #cont-nav {
       background-color: #f6fdff;
+      height: 0;
       display: none;
+      transition: all 0.7s;
 
       .nav {
         margin-top: 30px;

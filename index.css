@@ -138,7 +138,10 @@ a {
 
 #wrap > main #cont-nav {
   background-color: #f6fdff;
+  height: 0;
   display: none;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
 }
 
 #wrap > main #cont-nav .nav {
