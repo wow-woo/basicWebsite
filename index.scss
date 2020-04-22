@@ -134,9 +134,11 @@ a {
   & > main {
     #cont-nav {
       background-color: #f6fdff;
-      height: 0;
-      display: none;
-      transition: all 0.7s;
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+
+      transition: opacity 0.5s ease-in-out, position 0.5s linear 1s;
 
       .nav {
         margin-top: 30px;

@@ -6,18 +6,18 @@ console.log(btn_nav_hide);
 let toggle = false;
 btn_nav_hide.onclick = function () {
   if (toggle === true) {
-    nav.style.height = 0;
-    nav.style.opacity = "0";
-    nav.style.display = "none";
+    nav.style.visibility = "hidden";
+    nav.style.opacity = 0;
+    nav.style.position = "absolute";
+
     toggle = false;
     console.log(toggle);
 
     return;
   }
-  nav.style.height = null;
-  nav.style.opacity = "1";
-  nav.style.display = "block";
-
+  nav.style.visibility = "visible";
+  nav.style.opacity = 1;
+  nav.style.position = "static";
   toggle = true;
 
   console.log(toggle);
