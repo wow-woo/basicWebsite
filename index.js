@@ -30,21 +30,25 @@ btn_nav_hide.onclick = function () {
 };
 
 //tab menu
-const tabTitle = document.querySelectorAll(".tab-menu>ul>li");
+const tabTitle = document.querySelectorAll(".tab-menu>ul>li>a");
 const oneTab = document.querySelectorAll(".tab-menu>ul>li>ul");
-// console.log(tabTitle);
-// console.log(oneTab);
+
+function tabMenuNavigate() {
+  oneTab.forEach(function (item) {
+    item.style.display = "none";
+  });
+  tabTitle.forEach(function (item) {
+    item.classList.remove("active");
+  });
+
+  this.classList.add("active");
+
+  this.parentElement.querySelector("ul").style.display = "block";
+}
 
 tabTitle.forEach(function (item) {
-  item.onclick = function () {
-    oneTab.forEach(function (item) {
-      item.style.display = "none";
-    });
-    tabTitle.forEach(function (item) {
-      item.classList.remove("active");
-    });
-
-    this.classList.add("active");
-    this.querySelector("ul").style.display = "block";
-  };
+  //on clicking
+  item.onclick = tabMenuNavigate;
+  //on tab moving
+  item.onfocus = tabMenuNavigate;
 });

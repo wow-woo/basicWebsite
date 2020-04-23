@@ -783,11 +783,10 @@ a {
               display: block;
               font-size: 15px;
             }
-            & > ul > li.active {
+            & > ul > li > a.active {
               background-color: #2c94c4;
-              & > a {
-                color: #fff;
-              }
+              display: block;
+              color: #fff;
             }
             & > ul > li {
               float: left;
