@@ -30,7 +30,7 @@ btn_nav_hide.onclick = function () {
 };
 
 //tab menu
-const tabTitle = document.querySelectorAll(".tab-menu>ul>li>a");
+const tabTitle = document.querySelectorAll(".tab-menu>ul>li");
 const oneTab = document.querySelectorAll(".tab-menu>ul>li>ul");
 // console.log(tabTitle);
 // console.log(oneTab);
@@ -40,6 +40,11 @@ tabTitle.forEach(function (item) {
     oneTab.forEach(function (item) {
       item.style.display = "none";
     });
-    this.parentElement.querySelector("ul").style.display = "block";
+    tabTitle.forEach(function (item) {
+      item.classList.remove("active");
+    });
+
+    this.classList.add("active");
+    this.querySelector("ul").style.display = "block";
   };
 });
