@@ -52,3 +52,21 @@ tabTitle.forEach(function (item) {
   //on tab moving
   item.onfocus = tabMenuNavigate;
 });
+
+//pop-up advertisements
+const popup = document.querySelectorAll(".popup>ul>li");
+const window_popup = document.querySelector(".window-popup");
+const btn_close = document.querySelector(".window-popup .close");
+
+popup.forEach(function (item) {
+  item.onclick = function () {
+    window_popup.style.display = "block";
+    window_popup.querySelector("img").src = item
+      .querySelector("img")
+      .getAttribute("src");
+  };
+});
+
+btn_close.onclick = function () {
+  window_popup.style.display = "none";
+};
